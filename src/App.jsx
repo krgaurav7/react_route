@@ -6,6 +6,7 @@ const  Landing = lazy(() => import('./components/Landing'))
 const  About = lazy(() => import('./components/About'))
 const  Contact = lazy(() => import('./components/Contact'))
 const Privacy = lazy(()=> import('./components/Privacy'))
+const Terms = lazy(()=> import('./components/Terms'))
 
 function App() {
   
@@ -22,6 +23,7 @@ function App() {
           <Route path='/about' element ={<Suspense fallback={"loading...."}><About /></Suspense>} />
           <Route path='/contact' element ={<Suspense fallback={"loading...."}><Contact /></Suspense>} />
           <Route path='/privacy' element ={<Suspense fallback={"loading...."}><Privacy /></Suspense>} />
+          <Route path='/terms' element ={<Suspense fallback={"loading...."}><Terms /></Suspense>} />
         </Routes>
       <Footer />  
       </BrowserRouter>

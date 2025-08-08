@@ -20,7 +20,9 @@ export default function Footer() {
           <li><a onClick={()=> {
               navigate('/privacy')
             }} className="hover:text-white transition hover:cursor-pointer">Privacy</a></li>
-          <li><a href="#" className="hover:text-white transition">Terms</a></li>
+          <li><a onClick={()=> {
+            navigate('/terms')
+          }} className="hover:text-white transition">Terms</a></li>
         </ul>
       </div>
     </footer>
